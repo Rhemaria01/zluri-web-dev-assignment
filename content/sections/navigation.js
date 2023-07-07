@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Menu, X } from "react-feather"
 import styled from "styled-components"
 import { Container } from "./style"
-
+import Resume from "../files/Reenav_Hemaria_Resume.pdf"
 
 
 export default class Navigation extends Component {
@@ -46,7 +46,7 @@ export default class Navigation extends Component {
                 <StyledContainer>
                     <Brand>
                         <Link to="/" onClick={this.closeMobileMenu}>
-                            <h2>ZLURI</h2>
+                            <h2>Reenav Hemaria</h2>
                         </Link>
                     </Brand>
                     <Mobile>
@@ -66,13 +66,13 @@ export default class Navigation extends Component {
                         <NavListWrapper>
                             <ul>
                                 <NavItem>
-                                    <a href="">Email</a>
+                                    <a href="mailto: reenavhemaria789@gmial.com">Email</a>
                                 </NavItem>
                                 <NavItem>
-                                    <a href="">Contact me</a>
+                                    <a href="tel:7757838413">Contact me</a>
                                 </NavItem>
                                 <ActionsContainer>
-                                    <a href="https://get.zluri.com/request-demo">
+                                    <a href={Resume} download="Reenav_Resume.pdf">
                                         <button>Resume</button>
                                     </a>
                                 </ActionsContainer>
@@ -86,13 +86,13 @@ export default class Navigation extends Component {
                             <NavListWrapperMobile mobile={true}>
                                 <ul>
                                     <NavItemMobile>
-                                        <a href="">Email</a>
+                                        <a href="mailto: reenavhemaria789@gmial.com">Email</a>
                                     </NavItemMobile>
                                     <NavItemMobile>
-                                        <a href="">Contact me</a>
+                                        <a href="tel:7757838413">Contact me</a>
                                     </NavItemMobile>
                                     <ActionsContainer>
-                                        <a href="https://get.zluri.com/request-demo">
+                                        <a href={Resume} download="Reenav_Resume.pdf">
                                             <button>Resume</button>
                                         </a>
                                     </ActionsContainer>

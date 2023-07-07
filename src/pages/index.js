@@ -5,6 +5,7 @@ import {
 import Question from "../../content/sections/questions";
 import Q1 from "../../content/sections/q1";
 import S1 from "../../content/sections/s1";
+import S5 from "../../content/sections/s5"
 import QuestionsHeading from "../../content/sections/q2";
 import Q3 from "../../content/sections/q3";
 import Q4 from "../../content/sections/q4";
@@ -16,7 +17,7 @@ import Layout from "../../content/sections/layout";
 export default function IndexPage() {
   return (
     <Layout>
-      <Seo title="Web development assignment for Zluri" />
+      <Seo title="Reenav Hemaria" />
       <Navigation />
       <div>
         <Header />
@@ -26,6 +27,7 @@ export default function IndexPage() {
         <S1 />
         <Q3 />
         <Q4 />
+        <S5 />
         <Feedback />
       </div>
     </Layout>

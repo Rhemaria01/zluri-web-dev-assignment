@@ -15,7 +15,10 @@ const Feedback = () => {
 
             <FeedbackDiv>
                 <p>
-                    Add your reply here
+                    Thank you for giving me the opportunity to take this assignment. 
+                    I actutally learned few new things while taking this assignment.
+                    Hope I have completed it as expected from me. It was not specified that how the 
+                    image section is to be made when there is nothing selected so I took the liberty to add a placeholder text.  
                 </p>
             </FeedbackDiv>
             

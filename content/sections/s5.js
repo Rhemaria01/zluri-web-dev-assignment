@@ -1,8 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import styled from 'styled-components';
 import { Container } from "./style";
+import Dropdown from "./Dropdown";
+import ImageShowcase from "./ImageShowcase";
 
 const S5 = () => {
+    const [selected,setSelected] = useState("Dropdown")
+
     return (
         <Container >
             <Title>
@@ -11,7 +15,10 @@ const S5 = () => {
                 </h4>
                 <p>Put the created component below this.</p>
             </Title>
-            
+            <Solution>
+            <Dropdown selected={selected} setSelected={setSelected}/>
+            <ImageShowcase selected={selected} />
+            </Solution>
         </Container>
     )
 }
@@ -46,4 +53,15 @@ ul{
 li{
     font-size:20px;
 }
+`
+const Solution = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    @media(max-width: 992px){
+        flex-direction: column;
+        align-items: center;
+    }
+
 `
